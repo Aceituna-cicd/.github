@@ -19,7 +19,7 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 | Repository | Description | Status |
 |---|---|---|
 | [Aceituna-cicd-backend](https://github.com/Aceituna-cicd/Aceituna-cicd-backend) | Go REST API — artifact tracking, deployments, projects, environments, users | ✅ Active |
-| [Aceituna-cicd-frontend](https://github.com/Aceituna-cicd/Aceituna-cicd-frontend) | Vue 3 SPA — dashboard and management UI | 🔧 Planned |
+| [Aceituna-cicd-frontend](https://github.com/Aceituna-cicd/Aceituna-cicd-frontend) | Vue 3 SPA — dashboard and management UI | 🔧 In progress |
 | [Aceituna-cicd-docs](https://github.com/Aceituna-cicd/Aceituna-cicd-docs) | Public documentation (English) | ✅ Active |
 | [Aceituna-cicd-specs](https://github.com/Aceituna-cicd/Aceituna-cicd-specs) | Project specifications (French) | ✅ Active |
 
@@ -27,18 +27,9 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 
 ## Current state
 
-The **backend** is the active focus. Core data management is fully operational:
+The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, Docker, structured logging, Swagger docs, and 90%+ test coverage across all packages.
 
-- **Artifacts** — register builds, track `(project, name, version)` uniqueness, update build metadata
-- **Projects** — group artifacts, manage per-user access
-- **Environments** — explicit creation, per-user access, deployment blocking on deletion
-- **Deployments** — record `success` / `failed` / `in_progress` status, full history with soft-delete
-- **Users** — role-based (`admin` / `standard`), bcrypt passwords, last-admin guard
-- **Access management** — grant/revoke per-user access to projects and environments
-
-**In progress:** authentication middleware (JWT and API token modes), RBAC enforcement, aggregated read-only views.
-
-**Not yet started:** Vue 3 frontend.
+The **frontend** bootstrap is done (Vue 3 + Vite + TypeScript + Pinia + Router + i18n, 30 unit tests). Views and composables are in progress.
 
 ---
 
@@ -49,7 +40,7 @@ The **backend** is the active focus. Core data management is fully operational:
 | Backend | Go 1.25 · Gin · GORM · zerolog · Viper |
 | Database | SQLite (default) · PostgreSQL (planned) |
 | API docs | Swagger UI (swaggo) |
-| Frontend | Vue 3 · Vite · TypeScript · Pinia · vue-i18n *(planned)* |
+| Frontend | Vue 3 · Vite · TypeScript · Pinia · vue-i18n |
 | Container | Docker multi-stage build |
 
 ---
