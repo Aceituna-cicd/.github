@@ -27,7 +27,7 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 
 ## Current state
 
-The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, Docker, structured logging, Swagger docs, and 90%+ test coverage across all packages.
+The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, Vue SPA serving (`server/static.go`), Docker, structured logging, Swagger docs, and 90%+ test coverage across all packages.
 
 The **frontend** is fully implemented: all views (Dashboard, Artefact, Environment, Project, Admin panel), authentication flow (login/logout, JWT in Pinia), i18n EN+FR with language switcher, WCAG 2.1 AA, and 200+ Vitest unit tests. Playwright E2E tests are the remaining planned item.
 
