@@ -19,7 +19,7 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 | Repository | Description | Status |
 |---|---|---|
 | [Aceituna-cicd-backend](https://github.com/Aceituna-cicd/Aceituna-cicd-backend) | Go REST API — artifact tracking, deployments, projects, environments, users | ✅ Active |
-| [Aceituna-cicd-frontend](https://github.com/Aceituna-cicd/Aceituna-cicd-frontend) | Vue 3 SPA — dashboard and management UI | 🔧 In progress |
+| [Aceituna-cicd-frontend](https://github.com/Aceituna-cicd/Aceituna-cicd-frontend) | Vue 3 SPA — dashboard, artefact/environment/project views, admin panel | ✅ Active |
 | [Aceituna-cicd-docs](https://github.com/Aceituna-cicd/Aceituna-cicd-docs) | Public documentation (English) | ✅ Active |
 | [Aceituna-cicd-specs](https://github.com/Aceituna-cicd/Aceituna-cicd-specs) | Project specifications (French) | ✅ Active |
 
@@ -29,7 +29,7 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 
 The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, Docker, structured logging, Swagger docs, and 90%+ test coverage across all packages.
 
-The **frontend** bootstrap is done (Vue 3 + Vite + TypeScript + Pinia + Router + i18n, 30 unit tests). Views and composables are in progress.
+The **frontend** is fully implemented: all views (Dashboard, Artefact, Environment, Project, Admin panel), authentication flow (login/logout, JWT in Pinia), i18n EN+FR with language switcher, WCAG 2.1 AA, and 200+ Vitest unit tests. Playwright E2E tests are the remaining planned item.
 
 ---
 
