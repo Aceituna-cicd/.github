@@ -27,7 +27,7 @@ When a pipeline builds an artifact, it registers it with Aceituna. When a deploy
 
 ## Current state
 
-The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, `GET /auth/config` public endpoint, Vue SPA serving, Docker, structured logging, Swagger docs, and 90%+ test coverage across all packages.
+The **backend** is feature-complete: all CRUD resources, authentication (JWT + API tokens), RBAC, aggregated read-only views, `GET /auth/config` public endpoint, Vue SPA serving, Docker, TLS/HTTPS, structured logging, Swagger docs, SQLite and PostgreSQL support, and 90%+ test coverage across all packages.
 
 The **frontend** is fully implemented: all views (Dashboard, Artefact list + detail, Environment, Project, Admin panel), runtime auth detection via `GET /auth/config` (`requiresLogin`/`supportsApiTokens`), artefact create form with JSON validation, i18n EN+FR with language switcher, WCAG 2.1 AA, and 300+ Vitest unit tests. Playwright E2E tests are the remaining planned item.
 
@@ -38,7 +38,7 @@ The **frontend** is fully implemented: all views (Dashboard, Artefact list + det
 | Layer | Technology |
 |---|---|
 | Backend | Go 1.25 · Gin · GORM · zerolog · Viper |
-| Database | SQLite (default) · PostgreSQL (planned) |
+| Database | SQLite (default) · PostgreSQL |
 | API docs | Swagger UI (swaggo) |
 | Frontend | Vue 3 · Vite · TypeScript · Pinia · vue-i18n |
 | Container | Docker multi-stage build |
