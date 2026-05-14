@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 80">
+  <defs>
+    <clipPath id="ob-full">
+      <ellipse cx="38" cy="47" rx="18" ry="27" transform="rotate(-12 38 47)"/>
+    </clipPath>
+  </defs>
+
+  <!-- Stem -->
+  <path d="M32 21 C31 14 36 10 35 6"
+        fill="none" stroke="#2A1A06" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Olive: shadow base -->
+  <ellipse cx="38" cy="47" rx="18" ry="27" transform="rotate(-12 38 47)" fill="#2C4E18"/>
+
+  <!-- Olive: mid tone -->
+  <ellipse cx="45" cy="38" rx="17" ry="25" transform="rotate(-5 45 38)" fill="#4E7E2C" clip-path="url(#ob-full)"/>
+
+  <!-- Olive: highlight -->
+  <ellipse cx="50" cy="32" rx="10" ry="17" transform="rotate(-5 50 32)" fill="#72B040" clip-path="url(#ob-full)"/>
+
+  <!-- Olive: specular -->
+  <ellipse cx="53" cy="26" rx="6" ry="9" transform="rotate(-5 53 26)" fill="#96D458" clip-path="url(#ob-full)"/>
+
+  <!-- Olive outline -->
+  <ellipse cx="38" cy="47" rx="18" ry="27" transform="rotate(-12 38 47)"
+           fill="none" stroke="#1A2E0A" stroke-width="2.8"/>
+
+  <!-- Pimiento: dark ring -->
+  <circle cx="39" cy="48" r="8.5" fill="#1A2E0A"/>
+
+  <!-- Pimiento: red fill -->
+  <circle cx="39" cy="48" r="6.5" fill="#C41E1E"/>
+
+  <!-- Pimiento: highlight -->
+  <ellipse cx="37.5" cy="46.5" rx="2.8" ry="2.2" fill="#E04040"/>
+
+  <!-- Brand name -->
+  <text x="72" y="48"
+        font-family="'Trebuchet MS', Arial, Helvetica, sans-serif"
+        font-size="30" font-weight="700"
+        letter-spacing="4"
+        fill="#2C4E18">ACEITUNA</text>
+
+  <!-- Separator line -->
+  <line x1="74" y1="55" x2="302" y2="55" stroke="#4E7E2C" stroke-width="1" opacity="0.4"/>
+
+  <!-- Tagline -->
+  <text x="74" y="67"
+        font-family="'Trebuchet MS', Arial, Helvetica, sans-serif"
+        font-size="10" font-weight="500"
+        letter-spacing="2.8"
+        fill="#72B040">CI/CD VERSION TRACKER</text>
+</svg>

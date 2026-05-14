@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./logo-full.svg" alt="Aceituna-CICD" width="500" />
+</p>
+
 # Aceituna-CICD
 
 **Aceituna-CICD** is an artifact version tracking tool for CI/CD pipelines. It records which version of each component was built and where it was deployed, giving teams a single source of truth across their delivery chain.
