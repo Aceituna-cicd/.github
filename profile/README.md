@@ -54,3 +54,5 @@ The **frontend** is fully implemented: all views (Dashboard, Artefact list + det
 All tasks are tracked on the [GitHub kanban board](https://github.com/orgs/Aceituna-cicd/projects/1).
 
 Documentation is available at [Aceituna-cicd-docs](https://github.com/Aceituna-cicd/Aceituna-cicd-docs).
+
+Docker container is available at [Container](https://github.com/Aceituna-cicd/Aceituna-cicd-backend/pkgs/container/aceituna).
